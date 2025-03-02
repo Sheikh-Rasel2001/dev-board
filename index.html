@@ -7,8 +7,8 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    <section class="max-w-screen-2xl bg-emerald-100 min-h-screen mx-auto">
+<body id="body" class="max-w-screen-2xl bg-emerald-100 min-h-screen mx-auto">
+    <section >
         <section class="max-w-screen-xl mx-auto pt-4">
             <!-- header section -->
             <header class="flex justify-between px-5 py-4 bg-white rounded-lg mb-5">
@@ -22,7 +22,7 @@
                         <span class="text-lg font-bold">23</span>
                     </button>
                     <div class="">
-                        <img src="image/theme-btn.png" alt="theme change">
+                        <a href="#"><img id="theme-change" src="image/theme-btn.png" alt="theme change"></a>
                     </div>
                 </div>
             </header>
@@ -143,5 +143,8 @@
             
         </section>
     </section>
+
+
+    <script src="script/main.js"></script>
 </body>
 </html>
