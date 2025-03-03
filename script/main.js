@@ -11,4 +11,6 @@ button.addEventListener('click', function(){
 const date = new Date();
     document.getElementById('date').innerText = date.toDateString();
     
-    
+document.getElementById('blogs').addEventListener('click', function(){
+    window.location.href = 'blogs/index.html'
+})
