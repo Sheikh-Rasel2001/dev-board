@@ -14,15 +14,11 @@ const date = new Date();
 
 document.getElementById('completed-btn').addEventListener('click', function(){
     const fixMobile = document.getElementById('fix-mobile').innerText;
-    console.log(fixMobile);
-
     const time = new Date();
-    document.getElementById('active-container').innerText = time.toLocaleTimeString();
-
     const container = document.getElementById('active-container');
     const p = document.createElement('p');
     p.innerText = `
-    You have completed The ${fixMobile} at ${time} 
+    You have completed The ${fixMobile} at ${time.toLocaleTimeString()} 
     `
     container.appendChild(p);
 })
