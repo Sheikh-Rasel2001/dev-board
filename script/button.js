@@ -8,7 +8,7 @@ document.getElementById('completed-btn').addEventListener('click', function(){
     You have completed The ${fixMobile} at ${time.toLocaleTimeString()} 
     `
     container.appendChild(p);
-    
+    document.getElementById('completed-btn').disabled = true;
 })
 
 document.getElementById('completed-btn1').addEventListener('click', function(){
@@ -21,14 +21,7 @@ document.getElementById('completed-btn1').addEventListener('click', function(){
     You have completed The ${addPay} at ${time.toLocaleTimeString()} 
     `
     container.appendChild(p);
-
-     // task assign
-     const task = document.getElementById('task').innerText
-     const convertTask = parseInt(task);
-     if(convertTask <= task){
-         const sub = convertTask - 1;
-         document.getElementById('task').innerText = sub;
-     }
+    document.getElementById('completed-btn1').disabled = true;
 })
 
 document.getElementById('completed-btn2').addEventListener('click', function(){
@@ -41,14 +34,7 @@ document.getElementById('completed-btn2').addEventListener('click', function(){
     You have completed The ${addReaction} at ${time.toLocaleTimeString()} 
     `
     container.appendChild(p);
-
-    // task assign
-    const task = document.getElementById('task').innerText
-    const convertTask = parseInt(task);
-    if(convertTask <= task){
-        const sub = convertTask - 1;
-        document.getElementById('task').innerText = sub;
-    }
+    document.getElementById('completed-btn2').disabled = true;
 })
 
 document.getElementById('completed-btn3').addEventListener('click', function(){
@@ -61,14 +47,8 @@ document.getElementById('completed-btn3').addEventListener('click', function(){
     You have completed The ${fixVideo} at ${time.toLocaleTimeString()} 
     `
     container.appendChild(p);
+    document.getElementById('completed-btn3').disabled = true;
 
-    // task assign
-    const task = document.getElementById('task').innerText
-    const convertTask = parseInt(task);
-    if(convertTask <= task){
-        const sub = convertTask - 1;
-        document.getElementById('task').innerText = sub;
-    }
 })
 
 document.getElementById('completed-btn4').addEventListener('click', function(){
@@ -81,18 +61,13 @@ document.getElementById('completed-btn4').addEventListener('click', function(){
     You have completed The ${integrateAi} at ${time.toLocaleTimeString()} 
     `
     container.appendChild(p);
-
-    // task assign
-    const task = document.getElementById('task').innerText
-    const convertTask = parseInt(task);
-    if(convertTask <= task){
-        const sub = convertTask - 1;
-        document.getElementById('task').innerText = sub;
-    }
+    document.getElementById('completed-btn4').disabled = true;
+    
 })
 
 document.getElementById('completed-btn5').addEventListener('click', function(){
     alert('Board updated Successfully');
+    alert('Congrates! You have completed all the task.')
     const amiProbashi = document.getElementById('ami-probashi').innerText;
     const time = new Date();
     const container = document.getElementById('active-container');
@@ -101,14 +76,8 @@ document.getElementById('completed-btn5').addEventListener('click', function(){
     You have completed The ${amiProbashi} at ${time.toLocaleTimeString()} 
     `
     container.appendChild(p);
-
-    // task assign
-    const task = document.getElementById('task').innerText
-    const convertTask = parseInt(task);
-    if(convertTask <= task){
-        const sub = convertTask - 1;
-        document.getElementById('task').innerText = sub;
-    }
+    document.getElementById('completed-btn5').disabled = true;
+    
 })
 
 // activity clear
